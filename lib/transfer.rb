@@ -10,11 +10,7 @@ class Transfer
   end
   
   def valid?
-    if @sender == sender && @reciever == @reciever && @balance > 0
-      true
-    else
-      false
-    end
+    @sender.valid? && @receiver.valid? ? true : false
   end
   
   def both_valid?
