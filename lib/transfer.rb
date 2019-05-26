@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    if @sender == "open" && @balance > 0
+    if @sender == sender && @reciever == @reciever && @balance > 0
       true
     else
       false
